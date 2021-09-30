@@ -1,0 +1,229 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 2rem;
+	position: relative;
+
+	.product-image {
+		position: relative;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			width: 100%;
+			position: relative;
+		}
+
+		> a:nth-of-type(2) {
+			background-color: $white;
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			@include transition(all 0.3s ease-in-out);
+		}
+
+		&:hover {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.product-details {
+		padding-top: 2.625rem;
+		padding-left: 0.5rem;
+		padding-right: 2.68rem;	
+		padding-bottom: 1rem;
+
+		h3 {
+			line-height: 1.25;
+			letter-spacing: -2px;
+		}
+	}
+
+	.product-title {
+		color: black;	
+		font-family: $heading-font;
+		font-size: $h4-font-size;
+		font-weight: 400;
+		line-height: 1;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	.product-date {
+		margin-bottom: 2rem;
+	}
+
+	.product-price {
+		color: $theme-color;
+		font-family: $heading-font;
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		margin-bottom: $spacer * 0.75;
+
+		del {
+			font-size: $h6-font-size;
+			color: black;
+			margin-left: 1rem;
+			font-weight: 500;
+			font-family: $heading-font;
+		}
+	}
+
+	.product-categories {
+		a {
+			color: #d4c4b1;
+			font-family: $body-font;
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: $line-height-base;
+		}		
+	}
+
+	.onnew {
+		position: absolute;
+		top: 1.8rem;
+		left: 1.8rem;
+		color: $theme-color;
+		font-family: $heading-font;
+		font-size: $h4-font-size;
+		text-transform: uppercase;
+		display: inline-block;
+		line-height: 1;
+		z-index: 2;
+	}
+
+	.onsale {
+		position: absolute;
+		top: 1.8rem;
+		left: 1.8rem;
+		color: white;
+		font-family: $heading-font;
+		font-size: 0.9375rem;
+		display: inline-block;
+		width: 2.2rem;
+		height: 2.2rem;
+		border-radius: 50%;
+		background-color: $theme-color;
+		line-height: 2.2rem;
+		text-align: center;
+		z-index: 2;
+	}
+
+	.add-to-cart {
+		.cart-description {
+			font-size: $h6-font-size;
+			// vertical-align: middle;
+			font-weight: 500;
+			font-family: $heading-font;
+			color: $theme-color;
+			text-transform: uppercase;
+			line-height: 1;
+		}
+	}
+
+	&.product-on-image {
+		position: relative;
+
+		.product-on-details {
+			margin-top: 2rem;
+
+			@include media-breakpoint-up(md) {
+				position: absolute;
+				top: 3rem;
+				margin-top: 0;
+			}
+		}
+
+		.left {
+			left: 3.6rem;
+		}
+
+		.right {
+			@include media-breakpoint-up(md) {
+				right: 3.6rem;
+			}
+		}
+	}
+
+}
+
+
+
+.ads {
+	position: relative;
+	display: block;
+
+	.ads-body {
+		position: absolute;
+		left: 3.6rem;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@include media-breakpoint-down(md) {
+			left: 1rem;
+		}
+	}
+}
+
+[data-cart-items] {
+    position: relative;
+    display: inline-block;
+
+	&::before {
+		content: attr(data-cart-items);
+		position: absolute;
+		top: -.5rem;
+		right: -.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 1rem;
+		height: 1rem;
+		font-size: 0.625rem;
+		font-weight: 500;
+		border-radius: 50%;
+		background-color: $theme-color;
+		color: $white;
+	}
+}
+
+#products {
+	.product {
+		margin-right: 2rem;
+	}
+}
+
