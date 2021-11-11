@@ -126,9 +126,9 @@
 				
 				<!-- About Us
 				============================================= -->
-				<div class="section about-bg text-center">
+				<div id="about-banner" class="banner" style="background-image: url(./images/about-bg.png);">
 					<div id="page-title">
-						<h1 class="title text-uppercase">about us</h1>
+						<h1 class="title text-uppercase text-center lh-1">about us</h1>
 					</div>
 				</div>	
 				
@@ -171,32 +171,63 @@
 					<div class="row">
 						<div class="col-xl-10 offset-xl-1">
 							<hr class="w-100 text-black" />
-							<div class="container d-flex flex-lg-nowrap flex-wrap row g-0 my-5">
-								<div class="d-flex flex-lg-nowrap flex-wrap justify-content-center col-lg-3 m-auto col-8 align-items-start">
-									<img src="images/feature_box/featured box1.png" class="img-fluid mb-3 me-4">
-									<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-										adipiscing,sed do eiusmod tempor incididunt
-									</h5>
+							
+							<div class="row my-5">
+
+								<div class="col-md-6 col-lg-3">
+									<div class="fbox d-flex align-items-start gap-3">
+										<div class="fbox-icon">
+											<img src="images/feature_box/featured box1.png" class="img-fluid">
+										</div>
+										<div class="fbox-header">
+											<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
+												adipiscing,sed do eiusmod tempor incididunt
+											</h5>
+										</div>
+									</div>
 								</div>
-								<div class="d-flex flex-lg-nowrap flex-wrap justify-content-center col-lg-3 my-4 col-8 m-auto align-items-start">
-									<img src="images/feature_box/featured box2.png" class="img-fluid mb-3 me-4">
-									<h5 class="fs-5 my-0 body-font lh-sm">Lorem ipsum dolor sit amet, consectetur
-										adipiscing,sed do eiusmod tempor incididunt
-									</h5>
+
+								<div class="col-md-6 col-lg-3">
+									<div class="fbox d-flex align-items-start gap-3">
+										<div class="fbox-icon">
+											<img src="images/feature_box/featured box2.png" class="img-fluid">
+										</div>
+										<div class="fbox-header">
+											<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
+												adipiscing,sed do eiusmod tempor incididunt
+											</h5>
+										</div>
+									</div>
 								</div>
-								<div class="d-flex flex-lg-nowrap flex-wrap justify-content-center col-lg-3 col-8 m-auto align-items-start">
-									<img src="images/feature_box/featured box3.png" class="img-fluid mb-3 me-4">
-									<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-										adipiscing,sed do eiusmod tempor incididunt
-									</h5>
+
+								<div class="col-md-6 col-lg-3">
+									<div class="fbox d-flex align-items-start gap-3">
+										<div class="fbox-icon">
+											<img src="images/feature_box/featured box3.png" class="img-fluid">
+										</div>
+										<div class="fbox-header">
+											<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
+												adipiscing,sed do eiusmod tempor incididunt
+											</h5>
+										</div>
+									</div>
 								</div>
-								<div class="d-flex flex-lg-nowrap flex-wrap justify-content-center col-lg-3 col-8 my-4 m-auto align-items-start">
-									<img src="images/feature_box/featured box4.png" class="img-fluid mb-3 me-4">
-									<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-										adipiscing,sed do eiusmod tempor incididunt
-									</h5>
+
+								<div class="col-md-6 col-lg-3">
+									<div class="fbox d-flex align-items-start gap-3">
+										<div class="fbox-icon">
+											<img src="images/feature_box/featured box4.png" class="img-fluid">
+										</div>
+										<div class="fbox-header">
+											<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
+												adipiscing,sed do eiusmod tempor incididunt
+											</h5>
+										</div>
+									</div>
 								</div>
+
 							</div>
+
 							<hr class="w-100 text-black" />
 						</div>
 					</div>
@@ -212,10 +243,10 @@
 									<h1 class="title fs-2 fw-normal">Our History</h1>
 								</div>
 								<div class="row">
-									<div class="col-lg-6 g-0">
+									<div class="col-lg-6">
 										<div class="d-flex">
-											<span class="theme-color fw-medium heading-font fs-3 lh-sm pe-xl-1 pe-5 text-decoration-underline">2001</span>
-											<h3 class="fw-medium lh-sm">Lorem ipsum dolor sit amet, consectetur</h3>
+											<span class="text-primary fw-medium heading-font fs-3 lh-sm pe-xl-1 pe-5 text-decoration-underline">2001</span>
+											<h3 class="fw-medium lh-sm ms-4">Lorem ipsum dolor sit amet, consectetur</h3>
 										</div>
 										<p class="mb-4 lh-sm fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 										<p class="lh-sm fs-6">
@@ -235,9 +266,6 @@
 							</div>
 
 							<div class="col-xl-10 offset-xl-1">
-								<!-- <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-									<span class="slider__label sr-only">
-								</div> -->
 								<img src="./images/history/even2.png" alt="History Image" class="img-fluid">
 							</div>
 						</div>
@@ -278,110 +306,127 @@
 					</div>
 				</div>
 				
-				<!-- Our news
-				============================================= -->
-				<div class="container">
-					<div class="row section pb-0">
-						<div class="col-xl-10 offset-xl-1">
-							<div class="d-flex justify-content-between align-items-center col-xl-10">
-								<div class="heading-block">
-									<h1 class="title">Our News</h1>
-								</div>
-							</div>
-							<div id="post" class="d-flex row">
-								<div class="col-xl-6 col-md-6 col-12 align-items-start align-self-stretch border-start-0">
-									<div class="product border border-1 d-flex flex-xl-nowrap flex-wrap ">
-										<div class="product-image w-xl-50">
-											<img src="images/shop/new_product1.png" class="img-full">
-										</div>
-										<div class="product-details w-xl-50">
-											<div class="ms-xl-5">
-											<p class="product-date lh-sm fs-6">3 sep 2021
-											</p>
-											<h3 class="fw-medium lh-sm mb-4">Lorem ipsum dolor 
-												sit amet, consectetur 
-												adipisicing elit</h3>
-											<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class=" col-xl-6 col-md-6 col-12 align-items-start align-self-stretch border-start-0">
-									<div class="product border border-1 d-flex flex-xl-nowrap flex-wrap">
-										<div class="product-image w-xl-50">
-											<img src="images/shop/new_product2.png" class="img-full">
-										</div>
-										<div class="product-details w-xl-50">
-											<div class="ms-xl-5">
-											<p class="product-date lh-sm fs-6">3 sep 2021
-											</p>
-											<h3 class="fw-medium lh-sm mb-4">Lorem ipsum dolor 
-												sit amet, consectetur 
-												adipisicing elit</h3>
-											<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class=" col-xl-5 col-md-6 col-12 align-items-start align-self-stretch border-start-0">
-									<div class="product border border-1 d-flex flex-xl-nowrap flex-wrap">
-										<div class="product-image w-xl-50">
-											<img src="images/shop/new_product2.png" class="img-full">
-										</div>
-										<div class="product-details w-xl-50">
-											<div class="ms-xl-5">
-											<p class="product-date lh-sm fs-6">3 sep 2021
-											</p>
-											<h3 class="fw-medium lh-sm mb-4">Lorem ipsum dolor 
-												sit amet, consectetur 
-												adipisicing elit</h3>
-											<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>	
+				<div class="section pb-0">
+
+					<div class="container">
+
 						<div class="row">
-							<div class="col-xl-10 offset-1">
-								<div class="feedback-bg">
-									<div class="feedback w-xl-50">
-										<h1 class="feedback-title lh-1 mb-3 text-white mt-5">Subscribe To Our News</h1>
-										<p class="account-description lh-sm col-8 m-auto text-white">
-											Lorem ipsum dolor sit amet, consecteturadipiscing,sed do eiusmod tempor incididunt
-											Lorem ipsum dolor sit amet, consecteturadipiscing,sed do eiusmod tempor incididunt
-										</p> 
-			
-										<div class="input-group w-50 my-5 mx-auto">
-											<input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Recipient's username with two button addons">
-											<button class="btn ms-md-3 ms-2 py-3 px-5 btn-outline-secondary text-white mt-md-0 mt-4" type="button">SUBSCRIBE</button>
-											</div>
-									</div>
+							<div class="offset-xl-1 col-xl-10">
+							  <div class="d-flex justify-content-between align-items-center col-xl-10">
+								<div class="heading-block">
+								  <h1 class="title">Our News</h1>
 								</div>
+							  </div>
+				
+							  <div id="post">
+				
+								<article class="post border">
+								  <div class="row">
+									<div class="col-lg-6">
+									  <div class="post-thumbnail">
+										<img src="images/shop/new_product1.png" class="img-full">
+									  </div>
+									</div>
+									<div class="col-lg-6">
+									  <div class="post-content">
+										<div class="entry-meta">
+										  <a href="#">3 sep 2021</a>
+										</div>
+										<h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+										<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+									  </div>
+									</div>
+								  </div>
+								</article>
+				
+								<article class="post border">
+								  <div class="row">
+									<div class="col-lg-6">
+									  <div class="post-thumbnail">
+										<img src="images/shop/new_product2.png" class="img-full">
+									  </div>
+									</div>
+									<div class="col-lg-6">
+									  <div class="post-content">
+										<div class="entry-meta">
+										  <a href="#">3 sep 2021</a>
+										</div>
+										<h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+										<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+									  </div>
+									</div>
+								  </div>
+								</article>
+								
+								<article class="post border">
+								  <div class="row">
+									<div class="col-lg-6">
+									  <div class="post-thumbnail">
+										<img src="images/shop/new_product1.png" class="img-full">
+									  </div>
+									</div>
+									<div class="col-lg-6">
+									  <div class="post-content">
+										<div class="entry-meta">
+										  <a href="#">3 sep 2021</a>
+										</div>
+										<h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+										<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+									  </div>
+									</div>
+								  </div>
+								</article>
+				
+							  </div>
+				
 							</div>
-						</div>
-						</div>
+							
+							<div class="row">
+							  <div class="offset-xl-1 col-xl-10 col-12"> 
+								<div class="bg-cover" style="background-image: url(./images/feedback-bg.png);">
+								  <div class="text-center py-5 px-3">
+									<h1 class="lh-1 mb-3 text-white mt-5">Subscribe To Our News</h1>
+									<div class="row justify-content-center">
+									  <div class="col-lg-6 col-xxl-4">
+										<p class="account-description lh-sm m-auto text-white">
+										  Lorem ipsum dolor sit amet, consecteturadipiscing,sed do eiusmod tempor incididunt
+										  Lorem ipsum dolor sit amet, consecteturadipiscing,sed do eiusmod tempor incididunt
+										</p> 
+						  
+										<div class="input-group my-5 mx-auto">
+										  <input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Recipient's username with two button addons">
+										  <button class="btn ms-md-3 ms-2 py-3 px-5 text-white">SUBSCRIBE</button>
+										</div>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</div>  
+						  </div>
+
 					</div>
-				</div>
+		
+				  </div>
 
 				<!-- Partners
-        ============================================= -->
-        <div class="container">
+				============================================= -->
+				<div class="container">
 
-          <div class="row">
+				<div class="row">
 
-            <div class="col-xl-10 offset-xl-1 col-12">
-              <div class="logos">
-                <div class="logo-item"><img src="images/logo/logo1.png" alt="Logo Image" class="img-fluid"></div>
-                <div class="logo-item"><img src="images/logo/logo2.png" alt="Logo Image" class="img-fluid"></div>
-                <div class="logo-item"><img src="images/logo/logo3.png" alt="Logo Image" class="img-fluid"></div>
-                <div class="logo-item"><img src="images/logo/logo4.png" alt="Logo Image" class="img-fluid"></div>
-              </div>
-            </div>                            
+					<div class="col-xl-10 offset-xl-1 col-12">
+					<div class="logos">
+						<div class="logo-item"><img src="images/logo/logo1.png" alt="Logo Image" class="img-fluid"></div>
+						<div class="logo-item"><img src="images/logo/logo2.png" alt="Logo Image" class="img-fluid"></div>
+						<div class="logo-item"><img src="images/logo/logo3.png" alt="Logo Image" class="img-fluid"></div>
+						<div class="logo-item"><img src="images/logo/logo4.png" alt="Logo Image" class="img-fluid"></div>
+					</div>
+					</div>                            
 
-          </div>
+				</div>
 
-        </div><!-- #partners -->
+			</div><!-- #partners -->
 			
 			</div>
 
@@ -391,76 +436,79 @@
 		============================================= -->
 		<footer id="footer">
 
-      <!-- Footer Main
+			<!-- Footer Main
 			============================================= -->
 			<div id="footer-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-1 offset-xl-1">
-              <img src="./images/logo_white.png" alt="saler logo" width="img-fluid">
-            </div>
-            <div class="col-xl-4 offset-xl-1">
-              <div class="d-flex justify-content-between">
-                <div class="mt-xl-0 mt-5">
-                  <p class="mb-3">Consultation on the order:</p>
-                  <h3 class="mb-3">8 800779 32 12</h3>
-                  <p class="mb-2">Monday - Saturday;</p>
-                  <p class="mb-1">09 am - 10 pm</p>
-                </div>
-                <div class="mt-xl-0 mt-5">
-                  <h3 class="mb-3">Store Location</h3>
-                  <a href="#"><p class="mb-3">98796 Canada October st.6</p></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 offset-xl-1">
-              <div class="d-flex justify-content-between">
-                <div class="mt-xl-0 mt-5">
-                  <h3 class="mb-3">Work time</h3>
-                  <p class="mb-2">Monday-Saturday;</p>
-                  <p class="mb-1">09 am- 10 pm</p>
-                </div>
-                <div class="widget widget-social mt-xl-0 mt-5">
-                  <h3 class="pb-2">Social Network</h3>
-                  <ul class="social-icons d-flex align-items-center pb-3 pe-0">
-                    <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-      </div>
-		
+				<div class="container">
+					<div class="row">
+					<div class="col-xl-1 offset-xl-1">
+						<img src="./images/logo_white.png" alt="saler logo" width="img-fluid">
+					</div>
+					<div class="col-xl-4 offset-xl-1">
+						<div class="d-md-flex justify-content-between text-center text-lg-start">
+						<div class="mt-xl-0 mt-5">
+							<p class="mb-3">Consultation on the order:</p>
+							<div class="widget widget-custom-html">
+							<h5 class="widget-title">8 800779 32 12</h5>
+							<p class="mb-2">Monday - Saturday;</p>
+							<p class="mb-1">09 am - 10 pm</p>
+							</div>
+						</div>
+						<div class="mt-xl-0 mt-5">
+							<div class="widget widget-custom-html">
+							<h5 class="widget-title">Store Location</h5>
+							<a href="#"><p class="mb-3">98796 Canada October st.6</p></a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-xl-3 offset-xl-1">
+						<div class="d-md-flex justify-content-between text-center text-md-start">
+						<div class="widget widget-custom-html mt-xl-0 mt-5">
+							<h5 class="widget-title">Work time</h5>
+							<p class="mb-2">Monday-Saturday;</p>
+							<p class="mb-1">09 am- 10 pm</p>
+						</div>
+						<div class="widget widget-social mt-xl-0 mt-5">
+							<div class="widget-title">Social Network</div>
+							<ul class="social-icons d-flex align-items-center pb-3 pe-0 justify-content-center justify-content-md-start">
+							<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+			
 			<!-- Footer bottom
 			============================================= -->
-      <div id="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-10 offset-lg-1">
-              <div class="d-flex justify-content-between flex-lg-nowarp flex-wrap">
-                <div class="copyright body-font mb-sm-1 mb-5 fs-5 third-color">&copy; Copyright 2020 FoodSite</div>
-                <div class="widget widget-payment mb-sm-1 mb-4 me-5">
-                  <div class="widget-content">
-                    <div class="payments d-flex justify-content-center">
-                      <span class="payment-icon ms-0"><img src="images/payments/visa.png" alt="Visa" class="img-fluid"></span>
-                      <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal" class="img-fluid"></span>
-                      <span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard" class="img-fluid"></span>
-                    </div>                                    
-                  </div>
-                </div>
-                <div class="third-color">All Rights Reserved</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+			<div id="footer-bottom">
+				<div class="container">
+					<div class="row">
+					<div class="col-xl-10 offset-lg-1">
+						<div class="d-lg-flex justify-content-between text-center text-lg-start">
+						<p class="copyright mb-5 fs-5 text-white-50">&copy; Copyright 2020 FoodSite</p>
+						<div class="widget widget-payment mb-4 me-lg-5">
+							<div class="widget-content">
+							<div class="payments d-flex justify-content-center">
+								<span class="payment-icon ms-0"><img src="images/payments/visa.png" alt="Visa" class="img-fluid"></span>
+								<span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard" class="img-fluid"></span>
+								<span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal" class="img-fluid"></span>
+							</div>                                    
+							</div>
+						</div>
+						<div class="text-white-50">All Rights Reserved</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			
 		</footer><!-- #footer -->
-
 
 	</div>
 

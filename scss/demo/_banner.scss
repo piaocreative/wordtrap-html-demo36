@@ -16,11 +16,11 @@
 -----------------------------------------------------------------*/
 
 
-#banner {
+.banner {
     background-image: url(../images/banner/banner-bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 
     .banner-wrap {
@@ -28,8 +28,8 @@
         padding-bottom: 9rem;
     }
 
-    h2 {
-        color: $theme-color;
-        font-style: italic;
+    &#about-banner {
+        padding-top: 8.75rem;
+        padding-bottom: 5rem;
     }
 }

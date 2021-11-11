@@ -72,16 +72,10 @@
 
 	.product-title {
 		color: black;	
-		font-family: $heading-font;
-		font-size: $h4-font-size;
 		font-weight: 400;
 		line-height: 1;
 		display: inline-block;
 		margin-bottom: 0;
-	}
-
-	.product-date {
-		margin-bottom: 2rem;
 	}
 
 	.product-price {
@@ -99,7 +93,6 @@
 			color: black;
 			margin-left: 1rem;
 			font-weight: 500;
-			font-family: $heading-font;
 		}
 	}
 
@@ -144,82 +137,75 @@
 	}
 
 	.add-to-cart {
-		.cart-description {
-			font-size: $h6-font-size;
-			// vertical-align: middle;
-			font-weight: 500;
-			font-family: $heading-font;
-			color: $theme-color;
-			text-transform: uppercase;
-			line-height: 1;
+		font-size: $h6-font-size;
+		// vertical-align: middle;
+		font-weight: 500;
+		font-family: $heading-font;
+		color: $theme-color;
+		text-transform: uppercase;
+		line-height: 1;
+	}
+
+	.product-on-details {
+		margin-top: 2rem;
+
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			top: 3rem;
+			margin-top: 0;
 		}
 	}
 
-	&.product-on-image {
-		position: relative;
+	.left {
+		left: 3.6rem;
+	}
 
-		.product-on-details {
-			margin-top: 2rem;
-
-			@include media-breakpoint-up(md) {
-				position: absolute;
-				top: 3rem;
-				margin-top: 0;
-			}
-		}
-
-		.left {
-			left: 3.6rem;
-		}
-
-		.right {
-			@include media-breakpoint-up(md) {
-				right: 3.6rem;
-			}
+	.right {
+		@include media-breakpoint-up(md) {
+			right: 3.6rem;
 		}
 	}
 
 }
-
-
 
 .ads {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
 
-	.ads-body {
-		position: absolute;
-		left: 3.6rem;
-		top: 50%;
-		transform: translateY(-50%);
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-		@include media-breakpoint-down(md) {
-			left: 1rem;
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+    }
+
+	&.ads1 {
+		.ads-body {
+			padding: 3.5rem;
+			padding-bottom: 1.875rem;
 		}
 	}
 }
 
-[data-cart-items] {
-    position: relative;
-    display: inline-block;
-
-	&::before {
-		content: attr(data-cart-items);
-		position: absolute;
-		top: -.5rem;
-		right: -.75rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 1rem;
-		height: 1rem;
-		font-size: 0.625rem;
-		font-weight: 500;
-		border-radius: 50%;
-		background-color: $theme-color;
-		color: $white;
-	}
-}
 
 #products {
 	.product {
