@@ -14,8 +14,6 @@
 
 // Text Color
 .text-black { color: #000 !important; }
-.theme-color { color: $theme-color !important; }
-.third-color { color: $third-color !important; }
 .light { color: $light !important; }
 
 //-------------------- Image --------------------//
@@ -37,6 +35,12 @@ img {
 	}
 }
 
+.bg-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 
 //-------------------- Section ------------------//
 
@@ -45,21 +49,3 @@ img {
 	padding-top: $section-spacer;
 	padding-bottom: $section-spacer;
 }
-
-.section-padding-top {
-	padding-top: $section-spacer;
-}
-
-.section-padding-bottom {
-	padding-bottom: $section-spacer;
-}
-
-.section-margin-top {
-	margin-top: $section-spacer;
-}
-
-.section-margin-bottom {
-	margin-bottom: $section-spacer;
-}
-
-

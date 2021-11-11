@@ -14,26 +14,8 @@
 /* ----------------------------------------------------------------
 	Add here extra styles for demo. Thanks!
 -----------------------------------------------------------------*/
-
-.contact {
-	padding-top: 3rem;
-	padding-bottom: 9rem;
-
-	.contact-email {
-		font-size: 2.25rem;
-		font-family: $heading-font;
-		font-weight: 400;
-		color: $primary;
-		line-height: 4rem;
-		margin-bottom: 0;
-	}
-
-	.contact-title {
-		font-weight: 500;
-		font-size: $h3-font-size;
-		font-family: $heading-font;
-		color: $heading-color;
-	}
+.slick-slide {
+	margin: 0.5rem;
 }
 
 .map {
@@ -76,56 +58,8 @@
 	}
 }
 
-.about-bg {
-	background-image: url(../images/about-bg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 13.75rem;
-	padding-bottom: 13rem;
-}
-
 .btn {
 	background-color: $theme-color;
-}
-
-.event {
-	.event-image {
-		position: relative;
-	}
-
-	.event-thumbnail {
-		position: absolute;
-		top: 2rem;
-	}
-
-	.left {
-		left: 0;
-		z-index: 100;
-	}
-
-	.right {
-		right: 0;
-	}
-}
-
-.link {
-	color: white !important;
-	line-height: 1;
-
-	a {
-		display: block;
-		font-size: $h6-font-size;
-		font-family: $body-font;
-		font-weight: 500;
-		
-	}
-}
-
-.header-white {
-	@include media-breakpoint-down(xl) {
-		background-color: white !important;
-	}
 }
 
 .w-md-40 {
@@ -141,30 +75,4 @@
 	display: inline-block;
 	text-decoration: none;
 	margin-bottom: 3rem;
-}
-
-.w-xl-50 {
-	@include media-breakpoint-up(xl) {
-		width: 50%;
-	}
-}
-
-.feedback-bg {
-	background-image: url(../images/feedback-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
-	@include media-breakpoint-up(xl) {
-		height: 27.5rem;
-	}
-
-	.feedback {
-		text-align: center;
-	}
 }

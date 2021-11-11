@@ -12,26 +12,11 @@
 .post {
 	position: relative;
 	margin-bottom: 1.875rem;
-
-
-	&.post-flat {
-		display: flex;
-		
-		.post-thumbnail {
-			flex: 1;
-		}
-
-		.post-content {
-			flex: 1;
-		}
-	}
 }
 
 .post-thumbnail {
 	display: block;
 	position: relative;
-	width: 100%;
-	height: auto;
 
 	a {
 		display: block;
@@ -46,37 +31,17 @@
 }
 
 .post-content {
-	position: relative;
-	padding: 1.875rem 0;
+	padding: 2.65rem 2.68rem 1rem 0.5rem;
 }
 
 .entry-title {
-	h4 {
-		font-family: $body-font;
-		font-weight: 400;
-		line-height: $line-height-sm;		
-
-		a {
-			color: $heading-color;
-			
-			&:hover { color: $theme-color; }
-		}
-	}
+	line-height: 1.5;		
 }
 
 .entry-meta {
-	list-style: none;
-	margin-bottom: 1.25rem;
-
-	li {
-		i {
-			color: rgba($theme-color, 0.5);
-			margin-right: 0.75rem;
-		}
-
-		a {
-			font-weight: 300;
-		}
+	a {
+		font-size: 0.875rem;
+		line-height: 1.5;
 	}
 }
 
@@ -93,10 +58,4 @@
 	font-size: $h6-font-size;
 	font-weight: 600;
 	line-height: $line-height-lg;
-}
-
-#post {
-	.product {
-		margin-right: 2rem;
-	}
 }
