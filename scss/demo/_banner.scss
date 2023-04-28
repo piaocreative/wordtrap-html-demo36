@@ -17,19 +17,182 @@
 
 
 .banner {
-    background-image: url(../images/banner/banner-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-
-    .banner-wrap {
-        padding-top: 11.875rem;
-        padding-bottom: 9rem;
+    background-color: $light;
+    p {
+        margin-bottom: 0;
     }
-
-    &#about-banner {
-        padding-top: 8.75rem;
-        padding-bottom: 5rem;
+    .banner-head {
+        font-size: 80px;
+    }
+    .banner-sub-head {
+        margin-bottom: 0.5vw;
+    }
+    .banner-price {
+        color: #000;
+        font-size: 1.875rem;
+        opacity: 1;
+    }
+    .banner-description {
+        font-size: 0.875rem;
+        font-family: $body-font;
+    }
+    .indicator {
+        position: absolute;
+        left: 49.5%;
+        bottom: 5.1%;
+        translate: -50% 0%;
+        .slick-next {
+            background-color: $light;
+            padding: 50px 60px 50px 40px;
+            border: 1px solid $light;
+            i {
+                font-size: 30px;
+                color: black;
+                opacity: 0.7;
+            }
+        }
+        .slick-next:hover {
+            background-color: $theme-color;
+            border: 1px solid $theme-color;
+            i {
+                color: white;
+            }
+        }
+        .slick-next::before {
+            content: none;
+        }
+        .slick-prev {
+            border: 1px solid $light;
+            background-color: $light;
+            padding: 50px 60px 50px 40px;
+            margin-left: 49px;
+            i {
+                font-size: 30px;
+                color: black;
+                opacity: 0.7;
+            }
+        }
+        .slick-prev:hover {
+            background-color: $theme-color;
+            border: 1px solid $theme-color;
+            i {
+                color: white;
+            }
+        }
+        .slick-prev::before {
+            content: none;
+        }
+    }
+    .banner2 {
+        .col-xl-610 {
+            img {
+                transform: scale(1.1);
+                transform-origin: left;
+            }
+        }
+        .col-xl-590 {
+            .col-560 {
+                padding: 1vw;
+                @include media-breakpoint-up (xxl) {
+                    padding: 0vw 7.8vw 3vw 4.35vw!important;
+                }
+            }
+            .col-640 {
+                background-color: #a0928c;
+            }
+        }
+    }
+    .banner3 {
+        .col-xl-610 {
+            margin-top: 1.2*$header-height;
+            .banner-head {
+                margin-top: 0vw;
+                padding-top: 7vw;
+                margin-bottom: 0.5vw;
+                padding: 2vw;
+                @include media-breakpoint-up (xxl) {
+                    padding: 0 8.6vw;
+                }
+            }
+            .banner-description {
+                padding: 2vw;
+                @include media-breakpoint-up (xl) {
+                    padding: 0 23vw 2vw 8.6vw;
+                }
+            }
+            .col-580 {
+                padding: 0vw 2vw 1vw 2vw;
+                @include media-breakpoint-up (xxl) {
+                    padding: 0vw 5.2vw 3vw 8.6vw;
+                }
+                .banner-description {
+                    padding: 0;
+                }
+                .banner-price {
+                    padding-bottom: 1vw;
+                }
+                .btn {
+                    opacity: 1;
+                    font-family: $heading-font;
+                }
+            }
+            .col-620 {
+                background-color: #7da2a5;;
+                img {
+                    transform: scale(1.35);
+                    transform-origin: center;
+                    margin-top: 9vw;
+                }
+            }
+        }
+        .col-xl-590 {
+            margin-top: 0;
+        }
+    }
+    .col-xl-590 {
+        // margin-top: $header-height;
+        .banner-head {
+            margin-top: 7vw;
+            margin-bottom: 0.5vw;
+            padding: 2vw;
+            @include media-breakpoint-up (xxl) {
+                padding: 0 6.3vw;
+            }
+        }
+        .banner-description {
+            padding: 2vw;
+            @include media-breakpoint-up (xl) {
+                padding: 0 23vw 2vw 6.3vw;
+            }
+        }
+        .col-640 {
+            background-color: #9a726a;
+            img {
+                transform: scale(1.35);
+                transform-origin: center;
+                margin-top: 9vw;
+            }
+        }
+        .col-560 {
+            padding: 0vw 2vw 1vw 2vw;
+            @include media-breakpoint-up (xxl) {
+                padding: 0vw 8vw 3vw 4.35vw;
+            }
+            .banner-description {
+                padding: 0;
+            }
+            .banner-price {
+                padding-bottom: 1vw;
+            }
+            .btn {
+                opacity: 1;
+            }
+        }
+    }
+    .col-xl-610 {
+        img {
+            transform: scale(1.35);
+            transform-origin: right;
+        }
     }
 }

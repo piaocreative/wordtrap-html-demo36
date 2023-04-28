@@ -64,12 +64,17 @@
 			padding: $primary-menu-padding 1.3rem;
 		}
 	}
-	.nav-item {
-		&.current,
-		&:hover {
-			a {
-				color: $theme-color;
-			}
+	.nav-link.current,
+	.nav-link:hover {
+		color: $theme-color;
+	}
+	.dropdown-item.current,
+	.dropdown-item:hover {
+		color: $theme-color;
+	}
+	.dropdown-toggle {
+		&::after {
+			margin-left: 1em;
 		}
 	}
 }
