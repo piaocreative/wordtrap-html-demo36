@@ -17,7 +17,6 @@
 
 
 .widget {
-
 	.widget-title {
 		font-size: 1.25rem;
 		font-family: $heading-font;
@@ -25,11 +24,9 @@
 		margin-bottom: 1rem;
 		color: white;
 	}
-
 	&.widget-contact {
 		margin-top: -0.6rem;
 	}
-
 	// Widget - Social
 	&.widget-social {
 		.social-icons {
@@ -39,7 +36,6 @@
 				&:last-child {
 					padding-right: 0;
 				}
-		
 				a {
 					color: white;
 					display: inline-block;
@@ -47,12 +43,10 @@
 					vertical-align: middle;
 					text-align: center;
 					transition: all 0.3s ease-in-out;
-		
 					&:hover {
 						background-color: $theme-color;
 						color: $white;
 					}
-		
 					i {
 						vertical-align: top;
 						line-height: 1.8125rem;
@@ -71,7 +65,6 @@
 					font-weight: 300;
 					font-size: 1rem;
 					transition: all 0.3s ease-in-out;
-
 					&:hover {
 						color: white;
 					}
@@ -83,15 +76,11 @@
 	// Widget - Payments
 	&.widget-payment {
 		.payments {
+			width: 12rem;
 			display: flex;
-
 			.payment-icon {
 				text-align: center;
 				margin-left: $spacer * 1.25;
-				
-				img {
-					width: 3rem;
-				}
 			}
 		}
 	}

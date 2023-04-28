@@ -122,11 +122,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.281rem + 0.372vw);
+  font-size: calc(1.28125rem + 0.375vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.56rem;
+    font-size: 1.5625rem;
   }
 }
 
@@ -619,15 +619,15 @@ progress {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 1rem);
-  padding-left: var(--bs-gutter-x, 1rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 400px;
+    max-width: 500px;
   }
 }
 @media (min-width: 768px) {
@@ -651,7 +651,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 2rem;
+  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -3571,9 +3571,7 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
-  padding: 0.9375rem 1rem;
-  font-size: 1.25rem;
-  font-weight: 400;
+  padding: 0.5rem 1rem;
   color: #000000;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3587,17 +3585,17 @@ textarea.form-control-lg {
 }
 
 .nav-tabs {
-  border-bottom: 2px solid #c34747;
+  border-bottom: 1px solid #dee2e6;
 }
 .nav-tabs .nav-link {
-  margin-bottom: -2px;
+  margin-bottom: -1px;
   background: none;
-  border: 2px solid transparent;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #c34747;
+  border-color: #e9ecef #e9ecef #dee2e6;
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
@@ -3607,12 +3605,12 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #c34747;
+  color: #495057;
   background-color: #fff;
-  border-color: #c34747;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
-  margin-top: -2px;
+  margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -3659,8 +3657,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2.625rem;
-  padding-bottom: 2.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3675,8 +3673,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0.2321428571rem;
+  padding-bottom: 0.2321428571rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   white-space: nowrap;
@@ -3697,8 +3695,8 @@ textarea.form-control-lg {
 }
 
 .navbar-text {
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .navbar-collapse {
@@ -3708,12 +3706,12 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  padding: 0 0;
+  padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 0.3125rem;
   transition: box-shadow 0.15s ease-in-out;
 }
 .navbar-toggler:hover {
@@ -3752,8 +3750,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -3778,8 +3776,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -3804,8 +3802,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -3830,8 +3828,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
@@ -3856,8 +3854,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xxl .navbar-nav .nav-link {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .navbar-expand-xxl .navbar-nav-scroll {
     overflow: visible;
@@ -3881,8 +3879,8 @@ textarea.form-control-lg {
   position: absolute;
 }
 .navbar-expand .navbar-nav .nav-link {
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 .navbar-expand .navbar-nav-scroll {
   overflow: visible;
@@ -3896,38 +3894,38 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: #c34747;
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: #c34747;
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.55);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #c34747;
+  color: rgba(0, 0, 0, 0.7);
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #c34747;
+  color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: #000000;
-  border-color: transparent;
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23343434' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-text {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.55);
 }
 .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
-  color: #c34747;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-dark .navbar-brand {
@@ -4084,7 +4082,7 @@ textarea.form-control-lg {
 }
 
 .card-group > .card {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 @media (min-width: 576px) {
   .card-group {
@@ -4872,7 +4870,7 @@ textarea.form-control-lg {
   pointer-events: none;
 }
 .toast-container > :not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .toast-header {
@@ -6840,7 +6838,7 @@ textarea.form-control-lg {
 }
 
 .fs-3 {
-  font-size: calc(1.281rem + 0.372vw) !important;
+  font-size: calc(1.28125rem + 0.375vw) !important;
 }
 
 .fs-4 {
@@ -9618,7 +9616,7 @@ textarea.form-control-lg {
     font-size: 2.5rem !important;
   }
   .fs-3 {
-    font-size: 1.56rem !important;
+    font-size: 1.5625rem !important;
   }
 }
 @media print {
@@ -9676,9 +9674,6 @@ textarea.form-control-lg {
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
   	Add here styles for header. Thanks!
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-  	Sticky Header
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
   	Logo
@@ -9976,29 +9971,14 @@ textarea.form-control-lg {
   position: relative;
 }
 #Demo36 #header.transparent-header {
-  background-color: black;
+  background-color: #eaeaea;
+  margin-bottom: 0;
 }
 @media (min-width: 1200px) {
   #Demo36 #header.transparent-header {
-    background: transparent;
+    background-color: transparent;
     z-index: 199;
-  }
-}
-@media (min-width: 1200px) {
-  #Demo36 #header.transparent-header + #banner, #Demo36 #header.transparent-header + #content {
-    top: -8.5rem;
     margin-bottom: -8.5rem;
-    position: relative;
-  }
-}
-#Demo36 #header-wrap {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-@media (min-width: 1200px) {
-  #Demo36 #header-wrap {
-    padding-left: 10.625rem;
-    padding-right: 10.625rem;
   }
 }
 #Demo36 .navbar-brand {
@@ -10006,36 +9986,29 @@ textarea.form-control-lg {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-@media (min-width: 1200px) {
-  #Demo36 .navbar-brand {
-    margin-right: 8.125rem;
-  }
-}
 #Demo36 .navbar-brand img {
-  width: 6.5625rem;
+  width: 5.1rem;
   height: auto;
 }
+#Demo36 #primary-menu {
+  padding-right: 12%;
+}
 #Demo36 #primary-menu .nav-link {
-  color: #2f363a;
+  color: #272727;
   font-family: "Inter", sans-serif;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0;
   text-transform: initial;
 }
 @media (min-width: 1200px) {
   #Demo36 #primary-menu .nav-link {
     line-height: 1;
-    padding: 2.8125rem 1.875rem;
+    padding: 2.8125rem 1.3rem;
   }
 }
 #Demo36 #primary-menu .nav-item.current a, #Demo36 #primary-menu .nav-item:hover a {
   color: #c34747;
-}
-@media (min-width: 1200px) {
-  #Demo36 #top-btns {
-    margin-left: 16.5rem;
-  }
 }
 #Demo36 #top-btns .nav-item {
   margin-right: 1rem;
@@ -10046,13 +10019,11 @@ textarea.form-control-lg {
   }
 }
 #Demo36 #top-btns .nav-link {
-  color: #2f363a;
-  font-size: 0.875rem;
-  line-height: 1;
+  width: 15px;
 }
 @media (min-width: 1200px) {
   #Demo36 #top-btns .nav-link {
-    padding: 0 0.9375rem;
+    padding: 0;
   }
 }
 #Demo36 #top-btns .nav-link:hover {
@@ -10467,8 +10438,8 @@ textarea.form-control-lg {
   margin-top: 3.5rem;
 }
 #Demo36 #footer-bottom {
-  padding-bottom: 3.875rem;
-  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+  padding-top: 0.75rem;
 }
 #Demo36 #page-title {
   position: relative;
@@ -10554,14 +10525,12 @@ textarea.form-control-lg {
   color: white;
 }
 #Demo36 .widget.widget-payment .payments {
+  width: 12rem;
   display: flex;
 }
 #Demo36 .widget.widget-payment .payments .payment-icon {
   text-align: center;
   margin-left: 1.25rem;
-}
-#Demo36 .widget.widget-payment .payments .payment-icon img {
-  width: 3rem;
 }
 #Demo36 .body-font {
   font-family: "Inter", sans-serif !important;

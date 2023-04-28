@@ -44,7 +44,7 @@ $font-size-base:                            1rem;
 
 $h1-font-size:                	            3.125rem;
 $h2-font-size:                             	2.5rem;
-$h3-font-size:                	            1.56rem;
+$h3-font-size:                	            1.5625rem;
 $h4-font-size:                	            1.125rem;
 $h5-font-size:                	            $font-size-base;
 $h6-font-size:               	            0.875rem;
@@ -108,52 +108,11 @@ $primary-menu-padding:			            2.8125rem;
 $sticky-menu-padding:			            1.40625rem;
 
 $primary-menu-font:                         $body-font;
-$primary-menu-font-weight:                  400;
+$primary-menu-font-weight:                  500;
 $primary-menu-font-size:                    0.875rem;
 $primary-menu-font-tt:                      initial;
-$primary-menu-font-color:                   #2f363a;
+$primary-menu-font-color:                   #272727;
 $primary-menu-font-spacing:                 0;
-
-// top Button
-$top-btn-font-size:        		            0.875rem;
-$top-btn-font-color:       	                #2f363a;
-
-// Navbar
-$navbar-padding-y:                          2.625rem;
-$navbar-light-color:                        $body-color;
-$navbar-light-hover-color:                  $theme-color;
-$navbar-light-active-color:                 $theme-color;
-$navbar-brand-padding-y:                    0;
-$navbar-nav-link-padding-x:                 1.25rem;
-$nav-link-height:                           1;
-$navbar-toggler-padding-y:                  0;
-$navbar-toggler-padding-x:                  0;
-$navbar-light-toggler-icon-bg:              url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#343434' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-light-toggler-border-color:         transparent;
-$navbar-toggler-border-radius:              0;
-
-
-
-
-// Navs
-$nav-link-padding-y:                        0.9375rem;
-$nav-link-padding-x:                        1rem;
-$nav-link-font-size:                        1.25rem;
-$nav-link-font-weight:                      400;
-$nav-link-color:                            $body-color;
-$nav-link-hover-color:                      $theme-color;
-
-
-
-
-// Tabs
-$nav-tabs-border-color:                     $theme-color;
-$nav-tabs-border-width:                     2px;
-$nav-tabs-border-radius:                    0;
-$nav-tabs-link-hover-border-color:          $theme-color;
-$nav-tabs-link-active-color:                $theme-color;
-$nav-tabs-link-active-border-color:         $theme-color;
-
 
 
 
@@ -211,7 +170,7 @@ $section-spacer:				            10rem;
 //-------------------- Container Max Width --------------------//
 
 $container-max-widths: (
-	sm:                                     400px,
+	sm:                                     500px,
 	md:                                     720px,
 	lg:                                     960px,
     xl:                                     1280px,
@@ -219,7 +178,7 @@ $container-max-widths: (
 );
 
 // Grid
-$grid-gutter-width:                         2rem;
+$grid-gutter-width:                         1.5rem;
 
 //-------------------- Social Icons Colors --------------------//
 
