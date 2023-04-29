@@ -1,0 +1,37 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: socials.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Social Icons
+-----------------------------------------------------------------*/
+
+
+.social-icons {
+	li {
+		padding: 0 1rem;
+
+		&:last-child {
+			padding-right: 0;
+		}
+		a {
+			color: white;
+			display: inline-block;
+			line-height: 1.8125rem;
+			vertical-align: middle;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: $theme-color;
+				color: $white;
+			}
+			i {
+				vertical-align: top;
+				line-height: 1.8125rem;
+			}
+		}
+	}
+}

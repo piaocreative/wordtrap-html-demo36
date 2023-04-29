@@ -14,6 +14,7 @@
 
 // Text Color
 .text-black { color: #000 !important; }
+.text-theme { color: $theme-color!important;}
 .light { color: $light !important; }
 
 //-------------------- Image --------------------//
@@ -46,4 +47,39 @@ img {
 section {
 	position: relative;
 	padding-bottom: $section-spacer;
+}
+
+//-------------------- Accordion ------------------//
+.accordion-header {
+	margin-bottom: 0;
+}
+
+.accordion-button {
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.accordion-body {
+	padding-top: 0;
+}
+
+.accordion-item {
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+
+//-------------------- Nav Tabs ------------------//
+.nav-tabs,
+.nav-pills {
+	border-bottom: 0;
+	margin-bottom: 1rem;
+
+	.nav-link {
+		font-size: 1.125rem;
+		font-weight: 700;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
 }

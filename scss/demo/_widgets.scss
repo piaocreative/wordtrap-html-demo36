@@ -27,6 +27,7 @@
 	&.widget-contact {
 		margin-top: -0.6rem;
 	}
+
 	// Widget - Social
 	&.widget-social {
 		.social-icons {
@@ -81,6 +82,25 @@
 			.payment-icon {
 				text-align: center;
 				margin-left: $spacer * 1.25;
+			}
+		}
+	}
+
+	// Widget - Search
+	&.widget-search {
+		.search-form {
+			.input-group {
+				.form-control {
+					border-radius: 3.1875rem;
+				}
+
+				.btn {
+					position: absolute;
+					right: 1.5rem;
+					padding-left: 0;
+					padding-right: 0;
+					z-index: 4;
+				}
 			}
 		}
 	}
