@@ -1,0 +1,125 @@
+/* ----------------------------------------------------------------
+
+	pages.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Pages
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for pages pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Home
+-----------------------------------------------------------------*/
+
+#new-arrival-indicator {
+    position: absolute;
+    translate: -50% 0%;
+    @include media-breakpoint-up(lg) {
+        bottom: 25%;
+        left: 5%;
+    }
+    @include media-breakpoint-up(xl) {
+        bottom: 30%;
+        left: 10%;
+    }
+    @include media-breakpoint-up(xxl) {
+        bottom: 40%;
+        left: 8.5%;
+    }
+    .slick-next {
+        i {
+            font-size: 30px;
+            color: $light;
+        }
+    }
+    .slick-next:hover {
+        i {
+            color: $theme-color;
+        }
+    }
+    .slick-next::before {
+        content: none;
+    }
+    .slick-prev {
+        margin-left: 200px;
+        i {
+            font-size: 30px;
+            color: $light;
+        }
+    }
+    .slick-prev:hover {
+        i {
+            color: $theme-color;
+        }
+    }
+    .slick-prev::before {
+        content: none;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+.slick-dots li button::before {
+    font-size: 20px;
+    color: $third-color;
+    }
+    .slick-dots li.slick-active button::before {
+        color: $theme-color;
+    }
+}
+#blog-banner {
+    .fs-1 {
+        opacity: 0.9;
+        line-height: 1;
+        padding-top: 7.5vw;
+        @include media-breakpoint-up (lg) {
+            font-size: 55px!important;
+        }
+        @include media-breakpoint-up (xl) {
+            font-size: 60px!important;
+        }
+        @include media-breakpoint-up (xxl) {
+            font-size: 65px!important;
+        }
+    }
+    .fs-6 {
+        width: 90%;
+        padding-bottom: 5vw;
+        @include media-breakpoint-up (md) {
+            width: 85%;
+        }
+        @include media-breakpoint-up (lg) {
+            width: 75%;
+        }
+        @include media-breakpoint-up (xl) {
+            width: 50%;
+        }
+        @include media-breakpoint-up (xxl) {
+            width: 35%;
+        }
+    }
+}
+#blog {
+    padding-bottom: 0;
+    .feedback-block {
+        .fs-1 {
+            font-size: 60px!important;
+        }
+    }
+}
+#logos-partners {
+    padding-bottom: 0;
+}
+
+/* About
+-----------------------------------------------------------------*/

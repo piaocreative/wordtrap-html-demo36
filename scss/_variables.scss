@@ -37,7 +37,7 @@ $link-decoration:				            none;
 $link-hover-color:				            $theme-color;
 
 // Border
-$border-radius:					            0.3125rem;
+$border-radius:					            0rem;
 
 // Font sizes
 $font-size-base:                            1rem;
@@ -72,7 +72,7 @@ $input-border-color:                        $theme-color;
 $input-border-width:			            0;
 $input-btn-focus-color-opacity:             1;
 
-$input-btn-padding-y:                       1rem;
+$input-btn-padding-y:                       0.85rem;
 $input-btn-padding-x:                       1.5rem;
 $input-btn-font-size:                       0.875rem;
 
@@ -170,11 +170,21 @@ $section-spacer:				            10rem;
 //-------------------- Container Max Width --------------------//
 
 $container-max-widths: (
+	xs:                                     300px,
 	sm:                                     500px,
-	md:                                     720px,
-	lg:                                     960px,
+	md:                                     768px,
+	lg:                                     1080px,
     xl:                                     1280px,
     xxl:                                    1580px
+);
+
+$grid-breakpoints: (
+	xs:                                     0,
+	sm:                                     576px,
+	md:                                     992px,
+	lg:                                     1280px,
+	xl:                                     1440px,
+	xxl:                                    1680px
 );
 
 // Grid

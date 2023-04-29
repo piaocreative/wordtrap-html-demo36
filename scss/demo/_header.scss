@@ -36,7 +36,6 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-	margin-right: 3.5rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	img {
@@ -103,6 +102,7 @@
 		width: 15px;
 		@include media-breakpoint-up(xl) {
 			padding: 0;
+			margin: 0;
 		}
 		&:hover {
 			color: $primary;
