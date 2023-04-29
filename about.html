@@ -18,6 +18,11 @@
 		============================================= -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
 
+		<!-- Slick
+        ============================================= -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 		<!-- Stylesheets
 		============================================= -->
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -64,10 +69,10 @@
 
 									<ul class="navbar-nav">
 										<li class="nav-item">
-											<a href="index.html" class="nav-link">Home</a>
+											<a href="index.html" class="nav-link text-white">Home</a>
 										</li>
 										<li class="nav-item dropdown">
-											<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+											<a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
 											<ul class="dropdown-menu">
 												<li>
 													<a href="shop.html" class="dropdown-item">Shop</a>
@@ -107,10 +112,10 @@
 											</ul>
 										</li>
 										<li class="nav-item">
-											<a href="contact.html" class="nav-link">Contact Us</a>
+											<a href="contact.html" class="nav-link text-white">Contact Us</a>
 										</li>
 										<li class="nav-item dropdown">
-											<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+											<a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
 											<ul class="dropdown-menu">
 												<li>
 													<a href="blog.html" class="dropdown-item">Archive</a>
@@ -131,12 +136,12 @@
 									<ul class="navbar-nav flex-row">
 										<li class="nav-item pe-4">
 											<a href="#" class="nav-link text-black pe-2">
-												<img src="images/icon/top_btn/shopping-bag.png" alt="shopping-bag">
+												<img src="images/icon/top_btn/shopping-bag-white.png" alt="shopping-bag">
 											</a>
 										</li>
 										<li class="nav-item">
 											<a href="#" class="nav-link text-black">
-												<img src="images/icon/top_btn/avatar.png" alt="user-avatar">
+												<img src="images/icon/top_btn/avatar-white.png" alt="user-avatar">
 											</a>
 										</li>
 									</ul>
@@ -150,319 +155,393 @@
 
 			</header><!-- #header -->
 
-			<!-- Content
+			<!-- Main
 			============================================= -->
-			<section id="content">
+			<main id="main">
 
-				<div class="content-wrap">           
-					
-					<!-- About Us
-					============================================= -->
-					<div id="about-banner" class="banner" style="background-image: url(./images/about-bg.png);">
-						<div id="page-title">
-							<h1 class="title text-uppercase text-center lh-1">about us</h1>
-						</div>
-					</div>	
-					
-					<div class="section">
-						<div class="container">
-		
-							<div class="row col-xl-11">
-		
-								<div class="col-xl-5 offset-xl-1">
-									<img src="./images/shop/image1.png" alt="Featured Image" class="img-full">
+				<!-- About Us Banner
+                ============================================= -->
+                <section id="about-us-banner" class="about-us">
+
+                    <div class="container-fluid g-0">
+                        <div id="about-us" class="py-5 position-relative" style="background-image: url('images/pages/about/about-bg.png'); background-size: cover;">
+                            <div id="page-title" class="py-5 position-absolute start-50 top-50 translate-middle">
+                                <h2 class="title text-uppercase text-center lh-1 py-5 fs-1">about us</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </section><!-- #about-us-banner -->
+
+                <!-- About Us
+                ============================================= -->
+                <section id="about-us">
+
+                    <div class="container g-0">
+                        <div class="row g-0 d-flex justify-content-between">
+                            <div class="col-xl-475 g-0">
+                                <img src="images/shop/image1.png" alt="Featured Image" class="img-full">
+                            </div>
+                            <div class="col-xl-610 g-0 mt-xl-0 mt-5">
+                                <h2 class="lh-1 mb-5 fw-medium">Lorem ipsum dolor</h2>
+                                <div class="row pt-2 g-0">
+                                    <div class="col-lg-600 g-0 pe-lg-1">
+                                        <h6 class="lh-sm text-black mb-4 body-font fs-4 pe-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </h6>
+                                        <p class="lh-sm fs-6 mb-4 pe-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <p class="lh-sm fs-6 mb-5 pe-lg-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <img src="images/shop/image2.png" alt="Featured" class="img-fluid w-100 pe-lg-4">
+                                    </div>
+                                    <div class="col-lg-600 g-0 mt-lg-0 mt-5 ps-lg-2">
+                                        <img src="images/shop/image3.png" alt="Featured" class="img-fluid mb-5 w-100 ps-lg-1">
+                                        <p class="lh-sm fs-6 mb-4 ps-lg-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="lh-sm fs-6 mb-5 ps-lg-1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </p>
+                                    </div>
+                                </div>
+                                <button class="btn rounded text-uppercase mt-5 w-xl-25 heading-font py-3 px-5 text-white">
+                                    <span class="mx-2">About us</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section><!-- #about-us -->
+
+				<!-- Feature Box
+				============================================= -->
+				<section id="feauture-box">
+
+					<div class="container g-0">
+						<hr class="w-100 text-black" />
+						<div class="row my-5 d-flex justify-content-between g-0">
+							<div class="col-md-587 col-lg-300 g-0 my-4 mb-0 pe-xxl-5">
+								<div class="fbox d-flex align-items-start gap-4">
+									<div class="fbox-icon">
+										<img src="images/icon/feature_box/featured box1.png" class="img-fluid">
+									</div>
+									<div class="fbox-header pe-xxl-5">
+										<p class="lh-sm my-0 body-font fs-5">
+											Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit, sed do eiusmod tempor incididunt
+										</p>
+									</div>
 								</div>
-								
-								<div class="col-xl-5 offset-xl-1 mt-xl-0 mt-5">
-									<h2 class="lh-1 mb-5">Lorem ipsum dolor</h2>
-									<div class="row pt-2">
-										<div class="col-lg-6">
-											<p class="lh-sm text-black fs-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
-											<p class="lh-sm fs-6 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-											<p class="lh-sm fs-6 mb-5">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-											<img src="images/shop/image2.png" alt="Featured" class="img-fluid">
-		
-										</div>
-										<div class="col-lg-6 mt-lg-0 mt-5">
-											<img src="images/shop/image3.png" alt="Featured" class="img-fluid mb-5">
-											<p class="lh-sm fs-6 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-											<p class="lh-sm fs-6 mb-5">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </p>
-										</div>
+							</div>
+							<div class="col-md-587 col-lg-300 g-0 my-4 mb-0 ps-xxl-5">
+								<div class="fbox d-flex align-items-start gap-4">
+									<div class="fbox-icon">
+										<img src="images/icon/feature_box/featured box2.png" class="img-fluid">
 									</div>
-									<button class="btn btn-primary rounded text-uppercase mt-5 w-xl-25">About us</button>
+									<div class="fbox-header pe-xxl-5">
+										<p class="lh-sm my-0 body-font fs-5">
+											Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit, sed do eiusmod tempor incididunt
+										</p>
+									</div>
 								</div>
-		
-							</div>	
-						
-						</div>	
-					</div>
-
-					<!-- Feature Box
-					============================================= -->
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-10 offset-xl-1">
-								<hr class="w-100 text-black" />
-								
-								<div class="row my-5">
-
-									<div class="col-md-6 col-lg-3">
-										<div class="fbox d-flex align-items-start gap-3">
-											<div class="fbox-icon">
-												<img src="images/feature_box/featured box1.png" class="img-fluid">
-											</div>
-											<div class="fbox-header">
-												<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-													adipiscing,sed do eiusmod tempor incididunt
-												</h5>
-											</div>
-										</div>
+							</div>
+							<div class="col-md-587 col-lg-300 g-0 my-4 mb-0 ms-xxl-auto ps-xxl-5">
+								<div class="fbox d-flex align-items-start gap-4 ps-xxl-4">
+									<div class="fbox-icon">
+										<img src="images/icon/feature_box/featured box3.png" class="img-fluid">
 									</div>
-
-									<div class="col-md-6 col-lg-3">
-										<div class="fbox d-flex align-items-start gap-3">
-											<div class="fbox-icon">
-												<img src="images/feature_box/featured box2.png" class="img-fluid">
-											</div>
-											<div class="fbox-header">
-												<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-													adipiscing,sed do eiusmod tempor incididunt
-												</h5>
-											</div>
-										</div>
+									<div class="fbox-header pe-xxl-4">
+										<p class="lh-sm my-0 body-font fs-5">
+											Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit, sed do eiusmod tempor incididunt
+										</p>
 									</div>
-
-									<div class="col-md-6 col-lg-3">
-										<div class="fbox d-flex align-items-start gap-3">
-											<div class="fbox-icon">
-												<img src="images/feature_box/featured box3.png" class="img-fluid">
-											</div>
-											<div class="fbox-header">
-												<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-													adipiscing,sed do eiusmod tempor incididunt
-												</h5>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-6 col-lg-3">
-										<div class="fbox d-flex align-items-start gap-3">
-											<div class="fbox-icon">
-												<img src="images/feature_box/featured box4.png" class="img-fluid">
-											</div>
-											<div class="fbox-header">
-												<h5 class="lh-sm my-0 body-font fs-5">Lorem ipsum dolor sit amet, consectetur
-													adipiscing,sed do eiusmod tempor incididunt
-												</h5>
-											</div>
-										</div>
-									</div>
-
 								</div>
-
-								<hr class="w-100 text-black" />
+							</div>
+							<div class="col-md-587 col-lg-300 g-0 my-4 mb-0 ms-xxl-auto ps-xxl-5">
+								<div class="fbox d-flex align-items-start ps-xxl-5 gap-4">
+									<div class="fbox-icon">
+										<img src="images/icon/feature_box/featured box4.png" class="img-fluid">
+									</div>
+									<div class="fbox-header">
+										<p class="lh-sm my-0 body-font fs-5">
+											Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit, sed do eiusmod tempor incididunt
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
+						<hr class="w-100 text-black" />
 					</div>
 
-					<!-- Our history
-					============================================= -->
-					<div class="section">
-						<div class="container">
-							<div class="row">
-								<div class="col-xl-5 offset-xl-1">
+				</section><!-- #feature-box -->
+
+				<!-- Our history
+				============================================= -->
+				<section id="our-history">
+
+					<div class="container g-0 position-relative">
+						<div class="about-us-slide">
+							<div class="row d-flex g-0">
+								<div class="col-xl-600">
 									<div class="heading-block">
-										<h1 class="title fs-2 fw-normal">Our History</h1>
+										<h2 class="title fs-1 heading-font fw-normal">Our History</h2>
 									</div>
-									<div class="row">
-										<div class="col-lg-6">
+									<div class="row g-0">
+										<div class="col-lg-600 g-0 pe-xxl-3">
 											<div class="d-flex">
 												<span class="text-primary fw-medium heading-font fs-3 lh-sm pe-xl-1 pe-5 text-decoration-underline">2001</span>
 												<h3 class="fw-medium lh-sm ms-4">Lorem ipsum dolor sit amet, consectetur</h3>
 											</div>
-											<p class="mb-4 lh-sm fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-											<p class="lh-sm fs-6">
-												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis</p>
+											<p class="mb-4 lh-sm fs-6 body-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+											<p class="lh-sm fs-6 body-font">
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+											</p>
 										</div>
-										<div class="col-lg-6">
-											<p class="mb-4 lh-sm fs-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-											<p class="lh-sm fs-6">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+										<div class="col-lg-600 g-0 ps-xxl-4 pb-xxl-5 mb-xxl-3">
+											<p class="mb-4 lh-sm fs-6 body-font">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+											<p class="lh-sm fs-6 body-font">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 										</div>
 									</div>
 								</div>
-			
-								<div class="col-xl-5 col-md-6 col-12">
+								<div class="col-xl-600 col-1200 g-0 mb-5 mb-xxl-0">
 									<div class="event">
-										<a href="#"><img src="images/history/event1.png" alt="History Image" class="img-full"></a>
-									</div>
-								</div>
-
-								<div class="col-xl-10 offset-xl-1">
-									<img src="./images/history/even2.png" alt="History Image" class="img-fluid">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="container">
-						<div class="row">
-							<div class="heading-block col-xl-4 offset-xl-1">
-								<h1 class="title fs-1 lh-sm fw-normal">Lorem Ipsum Dolor Sit Amet, Consectetur
-									Adipiscing Elit Sed</h1>
-							</div>
-
-							<div class="col-xl-5 offset-xl-1 mt-2 g-0">
-								<div class="row mb-5">
-									<div class="col-lg-6">
-										<p class="lh-sm fs-6 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-										<p class="lh-sm fs-6 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem </p>
-									</div>
-									<div class="col-lg-6">
-										<p class="lh-sm fs-6 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-										<p class="lh-sm fs-6 mb-5">
-											Nemo enim ipsam voluptat1
-											em quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi</p>
+										<a href="#">
+											<img src="images/pages/about/history/event1.png" alt="History Image" class="img-full">
+										</a>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row mt-1">
-							<div class="col-xl-4 offset-xl-1">
-								<img src="./images/shop/image4.png" class="img-fluid mb-5">
-								<p class="lh-sm fs-6 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								<p class="lh-sm fs-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-							</div>
-							<div class="col-xl-6">
-								<img src="./images/shop/image5.png" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					
-					<div class="section pb-0">
-
-						<div class="container">
-
-							<div class="row">
-								<div class="offset-xl-1 col-xl-10">
-								<div class="d-flex justify-content-between align-items-center col-xl-10">
+							<div class="row d-flex g-0">
+								<div class="col-xl-600">
 									<div class="heading-block">
-									<h1 class="title">Our News</h1>
+										<h2 class="title fs-1 heading-font fw-normal">Our History</h2>
+									</div>
+									<div class="row g-0">
+										<div class="col-lg-600 g-0 pe-xxl-3">
+											<div class="d-flex">
+												<span class="text-primary fw-medium heading-font fs-3 lh-sm pe-xl-1 pe-5 text-decoration-underline">2001</span>
+												<h3 class="fw-medium lh-sm ms-4">Lorem ipsum dolor sit amet, consectetur</h3>
+											</div>
+											<p class="mb-4 lh-sm fs-6 body-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+											<p class="lh-sm fs-6 body-font">
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+											</p>
+										</div>
+										<div class="col-lg-600 g-0 ps-xxl-4 pb-xxl-5 mb-xxl-3">
+											<p class="mb-4 lh-sm fs-6 body-font">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+											<p class="lh-sm fs-6 body-font">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+										</div>
 									</div>
 								</div>
-					
-								<div id="post">
-					
-									<article class="post border">
-									<div class="row">
-										<div class="col-lg-6">
-										<div class="post-thumbnail">
-											<img src="images/shop/new_product1.png" class="img-full">
-										</div>
-										</div>
-										<div class="col-lg-6">
-										<div class="post-content">
-											<div class="entry-meta">
-											<a href="#">3 sep 2021</a>
-											</div>
-											<h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-											<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-										</div>
-										</div>
-									</div>
-									</article>
-					
-									<article class="post border">
-									<div class="row">
-										<div class="col-lg-6">
-										<div class="post-thumbnail">
-											<img src="images/shop/new_product2.png" class="img-full">
-										</div>
-										</div>
-										<div class="col-lg-6">
-										<div class="post-content">
-											<div class="entry-meta">
-											<a href="#">3 sep 2021</a>
-											</div>
-											<h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-											<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-										</div>
-										</div>
-									</div>
-									</article>
-									
-									<article class="post border">
-									<div class="row">
-										<div class="col-lg-6">
-										<div class="post-thumbnail">
-											<img src="images/shop/new_product1.png" class="img-full">
-										</div>
-										</div>
-										<div class="col-lg-6">
-										<div class="post-content">
-											<div class="entry-meta">
-											<a href="#">3 sep 2021</a>
-											</div>
-											<h3 class="entry-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-											<p class="lh-sm my-0 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
-										</div>
-										</div>
-									</div>
-									</article>
-					
-								</div>
-					
-								</div>
-								
-								<div class="row">
-								<div class="offset-xl-1 col-xl-10 col-12"> 
-									<div class="bg-cover" style="background-image: url(./images/feedback-bg.png);">
-									<div class="text-center py-5 px-3">
-										<h1 class="lh-1 mb-3 text-white mt-5">Subscribe To Our News</h1>
-										<div class="row justify-content-center">
-										<div class="col-lg-6 col-xxl-4">
-											<p class="account-description lh-sm m-auto text-white">
-											Lorem ipsum dolor sit amet, consecteturadipiscing,sed do eiusmod tempor incididunt
-											Lorem ipsum dolor sit amet, consecteturadipiscing,sed do eiusmod tempor incididunt
-											</p> 
-							
-											<div class="input-group my-5 mx-auto">
-											<input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Recipient's username with two button addons">
-											<button class="btn ms-md-3 ms-2 py-3 px-5 text-white">SUBSCRIBE</button>
-											</div>
-										</div>
-										</div>
-									</div>
+								<div class="col-xl-600 col-1200 g-0 mb-5 mb-xxl-0">
+									<div class="event">
+										<a href="#">
+											<img src="images/pages/about/history/event1.png" alt="History Image" class="img-full">
+										</a>
 									</div>
 								</div>
-								</div>  
 							</div>
-
+							<div class="row d-flex g-0">
+								<div class="col-xl-600">
+									<div class="heading-block">
+										<h2 class="title fs-1 heading-font fw-normal">Our History</h2>
+									</div>
+									<div class="row g-0">
+										<div class="col-lg-600 g-0 pe-xxl-3">
+											<div class="d-flex">
+												<span class="text-primary fw-medium heading-font fs-3 lh-sm pe-xl-1 pe-5 text-decoration-underline">2001</span>
+												<h3 class="fw-medium lh-sm ms-4">Lorem ipsum dolor sit amet, consectetur</h3>
+											</div>
+											<p class="mb-4 lh-sm fs-6 body-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+											<p class="lh-sm fs-6 body-font">
+												Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+											</p>
+										</div>
+										<div class="col-lg-600 g-0 ps-xxl-4 pb-xxl-5 mb-xxl-3">
+											<p class="mb-4 lh-sm fs-6 body-font">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+											<p class="lh-sm fs-6 body-font">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-600 col-1200 g-0 mb-5 mb-xxl-0">
+									<div class="event">
+										<a href="#">
+											<img src="images/pages/about/history/event1.png" alt="History Image" class="img-full">
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
-			
+						<div id="about-us-indicator">
+							<img src="images/pages/about/history/event2.png" alt="event2" class="w-100">
+						</div>
 					</div>
 
-					<!-- Partners
-					============================================= -->
-					<div class="container">
+				</section><!-- #our-history -->
 
-					<div class="row">
+				<!-- Our history-lorem
+				============================================= -->
+				<section id="lorem">
 
-						<div class="col-xl-10 offset-xl-1 col-12">
-						<div class="logos">
-							<div class="logo-item"><img src="images/logo/logo1.png" alt="Logo Image" class="img-fluid"></div>
-							<div class="logo-item"><img src="images/logo/logo2.png" alt="Logo Image" class="img-fluid"></div>
-							<div class="logo-item"><img src="images/logo/logo3.png" alt="Logo Image" class="img-fluid"></div>
-							<div class="logo-item"><img src="images/logo/logo4.png" alt="Logo Image" class="img-fluid"></div>
+					<div class="container g-0">
+						<div class="row g-0 d-flex justify-content-between">
+							<div class="heading-block col-xl-475 g-0">
+								<h3 class="title fs-1 lh-sm fw-normal">
+									Lorem Ipsum Dolor Sit Amet, Consectetur
+									Adipiscing Elit Sed
+								</h3>
+							</div>
+							<div class="col-xl-609 mt-2 g-0">
+								<div class="row g-0 mb-5 d-flex justify-content-between">
+									<div class="col-lg-575 g-0">
+										<p class="lh-sm fs-6 mb-4 body-font">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+										<p class="lh-sm fs-6 mb-4 body-font">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+										</p>
+									</div>
+									<div class="col-lg-575 g-0">
+										<p class="lh-sm fs-6 mb-4 body-font">
+											Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+										</p>
+										<p class="lh-sm fs-6 mb-5 body-font">
+											Nemo enim ipsam voluptat1
+											em quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
-						</div>                            
-
+						<div class="row g-0 mt-1 d-flex justify-content-between">
+							<div class="col-xl-475 g-0">
+								<img src="./images/shop/image4.png" class="img-fluid mb-5 w-100">
+								<p class="lh-sm fs-6 mb-4 body-font">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+								<p class="lh-sm fs-6 body-font">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+								</p>
+							</div>
+							<div class="col-xl-697 g-0">
+								<img src="./images/shop/image5.png" class="img-fluid w-100">
+							</div>
+						</div>
 					</div>
 
-				</div><!-- #partners -->
-				
-				</div>
+				</section><!-- #lorem -->
 
-			</section><!-- #content -->
+				<!-- Blog
+                ============================================= -->
+                <section id="blog">
+
+                    <div class="container g-0">
+                        <div class="heading-block">
+                            <h1 class="title">Our News</h1>
+                        </div>
+                        <div class="row g-0 d-flex justify-content-between">
+                            <div class="col-lg-586 g-0">
+                                <article class="post border">
+                                    <div class="row g-0">
+                                        <div class="col-lg-600 g-0">
+                                            <div class="post-thumbnail">
+                                                <img src="images/shop/new_product1.png" class="img-full">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-600 g-0">
+                                            <div class="post-content p-4 ps-xxl-3 pe-xxl-4">
+                                                <div class="entry-meta px-xxl-4 pb-4">
+                                                    <a href="#">06 May 2021</a>
+                                                </div>
+                                                <h3 class="entry-title px-xxl-4 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                                                <p class="entry-content lh-sm my-0 px-xxl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-586 g-0">
+                                <article class="post border">
+                                    <div class="row g-0">
+                                        <div class="col-lg-600 g-0">
+                                            <div class="post-thumbnail">
+                                                <img src="images/shop/new_product2.png" class="img-full">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-600 g-0">
+                                            <div class="post-content p-4 ps-xxl-3 pe-xxl-4">
+                                                <div class="entry-meta px-xxl-4 pb-4">
+                                                    <a href="#">06 May 2021</a>
+                                                </div>
+                                                <h3 class="entry-title px-xxl-4 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                                                <p class="entry-content lh-sm my-0 px-xxl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row g-0 feedback-block">
+                            <div class="bg-cover" style="background-image: url(images/pages/home/feedback-bg.png);">
+                                <div class="text-center py-5 px-3">
+                                    <h2 class="lh-1 mb-3 text-white mt-5 fs-1">Subscribe To Our News</h2>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-600 col-xxl-470 g-0">
+                                            <p class="account-description lh-sm m-auto text-white body-font fs-6">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                            </p>
+                                            <div class="input-group my-5 mx-auto row d-flex ps-3 pe-3">
+                                                <div class="col-lg-770 g-0">
+                                                    <input type="text" class="form-control" placeholder="Enter Your Email Address" aria-label="Recipient's username with two button addons">
+                                                </div>
+                                                <div class="col-lg-430 g-0 ps-xxl-3 mt-4 mt-lg-0">
+                                                    <button class="btn py-3 px-5 text-white">
+                                                        <span class="mx-xxl-3">SUBSCRIBE</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section><!-- #blog -->
+
+                <!-- Logos -->
+                <!-- Partners
+                ============================================= -->
+                <section id="logos-partners">
+
+                    <div class="container g-xxl-0">
+                        <div class="logos">
+                            <div class="logo-item">
+                                <img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                            <div class="logo-item">
+                                <img src="images/logos/logo4.png" alt="Logo Image" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </section><!-- #partners -->
+
+			</main><!-- #main -->
 
             <!-- Footer
             ============================================= -->
@@ -565,8 +644,18 @@
         <!-- External JavaScripts
         ============================================= -->
 
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+        <!-- Slick JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Theme script -->
+        <script src="js/main.js"></script>
 
         <!-- Footer Scripts
         ============================================= -->

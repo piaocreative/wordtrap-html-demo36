@@ -123,3 +123,38 @@
 
 /* About
 -----------------------------------------------------------------*/
+.about-us {
+    #about-us {
+        min-height: 650px!important;
+        .fs-1 {
+            font-size: 80px!important;
+            @include media-breakpoint-up (md) {
+                font-size: 100px!important;
+            }
+            @include media-breakpoint-up (lg) {
+                font-size: 120px!important;
+            }
+            @include media-breakpoint-up (xl) {
+                font-size: 140px!important;
+            }
+            @include media-breakpoint-up (xxl) {
+                font-size: 150px!important;
+            }
+        }
+    }
+}
+#our-history {
+    p {
+        opacity: 1;
+    }
+    .event {
+        @include media-breakpoint-up (xl) {
+            padding-left: 125px;
+        }
+    }
+}
+#lorem {
+    p {
+        opacity: 0.9;
+    }
+}

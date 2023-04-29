@@ -63071,6 +63071,43 @@ textarea.form-control-lg {
 #Demo36 #logos-partners {
   padding-bottom: 0;
 }
+#Demo36 .about-us #about-us {
+  min-height: 650px !important;
+}
+#Demo36 .about-us #about-us .fs-1 {
+  font-size: 80px !important;
+}
+@media (min-width: 992px) {
+  #Demo36 .about-us #about-us .fs-1 {
+    font-size: 100px !important;
+  }
+}
+@media (min-width: 1280px) {
+  #Demo36 .about-us #about-us .fs-1 {
+    font-size: 120px !important;
+  }
+}
+@media (min-width: 1440px) {
+  #Demo36 .about-us #about-us .fs-1 {
+    font-size: 140px !important;
+  }
+}
+@media (min-width: 1680px) {
+  #Demo36 .about-us #about-us .fs-1 {
+    font-size: 150px !important;
+  }
+}
+#Demo36 #our-history p {
+  opacity: 1;
+}
+@media (min-width: 1440px) {
+  #Demo36 #our-history .event {
+    padding-left: 125px;
+  }
+}
+#Demo36 #lorem p {
+  opacity: 0.9;
+}
 #Demo36 textarea {
   resize: none;
 }
@@ -63185,12 +63222,13 @@ textarea.form-control-lg {
   display: block;
 }
 #Demo36 .fbox .fbox-icon img {
+  width: 5rem;
   display: block;
-  min-width: 2rem;
 }
 #Demo36 .fbox p {
   line-height: 2.1428571429;
   margin-bottom: 0;
+  opacity: 1;
 }
 #Demo36 .heading-block {
   margin-bottom: 2.5rem;

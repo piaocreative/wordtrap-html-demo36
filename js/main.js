@@ -195,6 +195,17 @@ $(document).ready(function(){
         ],
     });
 
+    // About us
+    $('.about-us-slide').slick({
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 800,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        cssEase: 'linear',
+    });
+
     //Logo slider
     $('.logos').slick({
         infinite: true,
