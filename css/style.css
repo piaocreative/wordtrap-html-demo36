@@ -62022,17 +62022,6 @@ textarea.form-control-lg {
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
 
-  	slider.scss
-
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-  	Slider
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-  	Add here styles for all sliders. Thanks!
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-
   	footer.scss
 
   -----------------------------------------------------------------*/
@@ -62041,17 +62030,6 @@ textarea.form-control-lg {
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
   	Add here styles for footer. Thanks!
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-
-  	pagetitle.scss
-
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-  	Page Title
-  -----------------------------------------------------------------*/
-  /* ----------------------------------------------------------------
-  	Add here styles for page title. Thanks!
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
 
@@ -62067,6 +62045,10 @@ textarea.form-control-lg {
   /* Home
   -----------------------------------------------------------------*/
   /* About
+  -----------------------------------------------------------------*/
+  /* Contact
+  -----------------------------------------------------------------*/
+  /* Error
   -----------------------------------------------------------------*/
   /*-----------------------------------------------------------------------------------
 
@@ -62129,6 +62111,17 @@ textarea.form-control-lg {
   	Shortcodes: team.scss
 
   -----------------------------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+
+  	pagetitle.scss
+
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Page Title
+  -----------------------------------------------------------------*/
+  /* ----------------------------------------------------------------
+  	Add here styles for page title. Thanks!
+  -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
 
   	extras.scss
@@ -62845,77 +62838,6 @@ textarea.form-control-lg {
 #Demo36 #products .product {
   margin-right: 2rem;
 }
-#Demo36 .arrow {
-  display: flex;
-  margin-bottom: 2.5rem;
-}
-#Demo36 .arrow .prev-arrow,
-#Demo36 .arrow .next-arrow {
-  color: #eaeaea;
-  font-size: 1.6rem;
-  font-weight: 700;
-  padding-left: 2rem;
-}
-#Demo36 .arrow .prev-arrow.active,
-#Demo36 .arrow .next-arrow.active {
-  color: #c34747;
-}
-#Demo36 .progress {
-  margin-top: 2.3rem;
-  display: block;
-  width: 100%;
-  height: 0.5rem;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-  background-color: #f5f5f5;
-  background-image: linear-gradient(to right, #c34747 #c34747);
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.4s ease-in-out;
-}
-#Demo36 #products div.slider-arrow {
-  position: absolute;
-  top: -13%;
-  margin-top: -12px;
-  color: #eaeaea;
-  line-height: 36px;
-  font-size: 2.6rem;
-  cursor: pointer;
-  z-index: 10;
-  width: fit-content;
-}
-#Demo36 #products div.slider-arrow:hover {
-  color: #c34747;
-}
-#Demo36 #products div.slider-prev {
-  right: 0;
-  margin-right: 2.5rem;
-}
-#Demo36 #products div.slider-next {
-  right: 0;
-}
-#Demo36 #post div.slider-arrow {
-  position: absolute;
-  top: -13%;
-  margin-top: -12px;
-  color: #eaeaea;
-  line-height: 36px;
-  font-size: 2.6rem;
-  cursor: pointer;
-  z-index: 10;
-  width: fit-content;
-}
-#Demo36 #post div.slider-arrow:hover {
-  color: #c34747;
-}
-#Demo36 #post div.slider-prev {
-  right: 0;
-  margin-right: 2.5rem;
-}
-#Demo36 #post div.slider-next {
-  right: 0;
-}
 #Demo36 #footer {
   background-color: black;
   line-height: 1;
@@ -62937,27 +62859,6 @@ textarea.form-control-lg {
 #Demo36 #footer-bottom {
   padding-bottom: 1.25rem;
   padding-top: 0.75rem;
-}
-#Demo36 #page-title {
-  position: relative;
-}
-#Demo36 #page-title .title {
-  color: white;
-  font-weight: 400;
-  font-size: 5rem;
-}
-@media (min-width: 1280px) {
-  #Demo36 #page-title .title {
-    font-size: 9.3rem;
-  }
-}
-#Demo36 #page-title .sub-title {
-  display: block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  color: black;
-  line-height: 1;
 }
 #Demo36 #new-arrival-indicator {
   position: absolute;
@@ -63107,6 +63008,59 @@ textarea.form-control-lg {
 }
 #Demo36 #lorem p {
   opacity: 0.9;
+}
+#Demo36 .map {
+  position: relative;
+  margin-bottom: 7rem;
+}
+#Demo36 .contact-address {
+  background-color: white;
+  padding: 3rem;
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2.5rem;
+  line-height: 1;
+}
+#Demo36 .contact-address .address {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+#Demo36 .error-404 {
+  background-image: url("../images/pages/404/404.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12.625rem;
+  padding-bottom: 12.3rem;
+}
+@media (max-width: 991.98px) {
+  #Demo36 .error-404 {
+    padding-top: 3.625rem;
+  }
+}
+#Demo36 .error-404 h1, #Demo36 .error-404 .h1 {
+  margin-bottom: 21.68rem;
+}
+@media (max-width: 991.98px) {
+  #Demo36 .error-404 h1, #Demo36 .error-404 .h1 {
+    margin-bottom: 15rem;
+  }
+}
+#Demo36 .btn {
+  background-color: #c34747;
+}
+@media (min-width: 992px) {
+  #Demo36 .w-md-40 {
+    width: 40%;
+  }
+}
+#Demo36 .read-more {
+  background: #c34747;
+  padding: 0.75rem 2rem;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 3rem;
 }
 #Demo36 textarea {
   resize: none;
@@ -63317,58 +63271,26 @@ textarea.form-control-lg {
 #Demo36 .team:hover .team-info {
   opacity: 1;
 }
-#Demo36 .map {
+#Demo36 #page-title {
   position: relative;
-  margin-bottom: 7rem;
 }
-#Demo36 .contact-address {
-  background-color: white;
-  padding: 3rem;
-  position: absolute;
-  left: 2.5rem;
-  bottom: 2.5rem;
-  line-height: 1;
-}
-#Demo36 .contact-address .address {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-}
-#Demo36 .error-404 {
-  background-image: url(../images/404.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 12.625rem;
-  padding-bottom: 12.3rem;
-}
-@media (max-width: 991.98px) {
-  #Demo36 .error-404 {
-    padding-top: 3.625rem;
-  }
-}
-#Demo36 .error-404 h1, #Demo36 .error-404 .h1 {
-  margin-bottom: 21.68rem;
-}
-@media (max-width: 991.98px) {
-  #Demo36 .error-404 h1, #Demo36 .error-404 .h1 {
-    margin-bottom: 15rem;
-  }
-}
-#Demo36 .btn {
-  background-color: #c34747;
-}
-@media (min-width: 992px) {
-  #Demo36 .w-md-40 {
-    width: 40%;
-  }
-}
-#Demo36 .read-more {
-  background: #c34747;
-  padding: 0.75rem 2rem;
+#Demo36 #page-title .title {
   color: white;
-  display: inline-block;
-  text-decoration: none;
-  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 5rem;
+}
+@media (min-width: 1280px) {
+  #Demo36 #page-title .title {
+    font-size: 9.3rem;
+  }
+}
+#Demo36 #page-title .sub-title {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: black;
+  line-height: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

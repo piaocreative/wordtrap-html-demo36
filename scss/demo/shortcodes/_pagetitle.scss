@@ -18,19 +18,16 @@
 
 #page-title {
 	position: relative;
-	
 	.title {
 		color: white;
 		font-weight: 400;
 		font-size: 5rem;
-
 		@include media-breakpoint-up(lg) {
 			font-size: 9.3rem;
 		}
 	}
-
 	.sub-title {
-		display: block;		
+		display: block;
 		font-family: $heading-font;
 		font-weight: 400;
 		line-height: 1;
